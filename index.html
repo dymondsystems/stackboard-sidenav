@@ -1,0 +1,3055 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Test</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" 
+      type="image/png" 
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Leaf_font_awesome.svg/1024px-Leaf_font_awesome.svg.png">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+ 
+ 
+ <meta property="og:title" content="Learning center" />
+<meta property="og:type" content="company" />
+<meta property="og:site_name" content="learning center " />
+<meta property="og:description" content=" Learning center 
+" />
+
+
+<meta property="og:url" content="Learning center" />
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Leaf_font_awesome.svg/1024px-Leaf_font_awesome.svg.png" />
+
+
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+ 
+<style>
+.my-card
+{
+    position:absolute;
+    left:40%;
+    top:-20px;
+    border-radius:50%;
+    
+}
+
+.progress{margin: 100px;}
+
+
+#calculator {
+  width: 450px;
+  height: 270px;;
+  margin: 50px auto 0 auto;
+  background-color: #191970;
+  padding: 10px 10px 260px 10px;
+  border-radius: 5px;
+  border-bottom: 5px solid #42729B;
+}
+
+.result {
+  width: 305px;
+  height: 40px;
+  float: left;
+  line-height: 40px;
+  background-color: #fff;
+  color: #000;
+  margin: 5px;
+}
+
+.result > p {
+  margin-left: 10px;
+}
+.clear, span1 {
+  height: 40px;
+  border-bottom: 3px solid grey;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  margin: 5px;
+}
+
+.clear {
+  width: 95px;
+  float: left;
+  background-color: #c0392b;
+  color: #fff;
+    border-color: #A63125;
+}
+
+
+span1 {
+  float: left;
+  width: 95px;
+}
+span1:hover{
+    
+	background-color:#00BFFF;
+}
+
+
+
+
+
+
+
+span.b {
+  display: inline-block;
+  
+  padding: 5px;
+  }
+ 
+
+html body {
+    background-color: rgba(0,0,0,1.00);
+
+}
+
+nav{
+color: white;
+z-index: 999;
+overflow-y: visible;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+   
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+}
+
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fda56b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#splash {
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+.curtain {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    animation: curtainAnimation 4s ease-out forwards, gradientAnimation 3s ease-out forwards;
+}
+
+
+.splash-content {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.splash-content i {
+    font-size: 2em;
+}
+
+.additional-splash-effects {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ff6b6b, #8e44ad, #3498db, #e74c3c);
+    animation: backgroundAnimation 20s infinite alternate;
+    z-index: 1;
+}
+
+#content {
+    text-align: center;
+    position: relative;
+}
+
+
+
+
+
+.animated-emoji {
+    font-size: 2em;
+    margin-top: 10px;
+    animation: bounce 1s infinite;
+}
+
+.animated-title {
+    animation: fadeInDown 1.5s ease-out;
+}
+
+.animated-subtitle {
+    animation: fadeInUp 1.5s ease-out;
+}
+
+@keyframes curtainAnimation {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradientAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes cardAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+#sidebar {
+    overflow: hidden;
+    z-index: 1000;
+}
+#sidebar .list-group {
+    min-width: 400px;
+    background-color: #333;
+    min-height: 100vh;
+}
+#sidebar i {
+    margin-right: 6px;
+}
+
+#sidebar .list-group-item {
+    border-radius: 0;
+    background-color: #333;
+    color: #ccc;
+    border-left: 0;
+    border-right: 0;
+    border-color: #2c2c2c;
+    white-space: nowrap;
+}
+
+/* highlight active menu */
+#sidebar .list-group-item:not(.collapsed) {
+    background-color: #222;
+}
+
+/* closed state */
+#sidebar .list-group .list-group-item[aria-expanded="false"]::after {
+  content: " \f0d7";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 5px;
+}
+
+/* open state */
+#sidebar .list-group .list-group-item[aria-expanded="true"] {
+  background-color: #222;
+}
+#sidebar .list-group .list-group-item[aria-expanded="true"]::after {
+  content: " \f0da";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 5px;
+}
+
+/* level 1*/
+#sidebar .list-group .collapse .list-group-item,
+#sidebar .list-group .collapsing .list-group-item  {
+  padding-left: 20px;
+}
+
+/* level 2*/
+#sidebar .list-group .collapse > .collapse .list-group-item,
+#sidebar .list-group .collapse > .collapsing .list-group-item {
+  padding-left: 30px;
+}
+
+/* level 3*/
+#sidebar .list-group .collapse > .collapse > .collapse .list-group-item {
+  padding-left: 40px;
+}
+
+@media (max-width:768px) {
+    #sidebar {
+        min-width: 35px;
+        max-width: 40px;
+        overflow-y: auto;
+        overflow-x: visible;
+        transition: all 0.25s ease;
+        transform: translateX(-45px);
+        position: fixed;
+    }
+    
+    #sidebar.show {
+        transform: translateX(0);
+    }
+
+    #sidebar::-webkit-scrollbar{ width: 0px; }
+    
+    #sidebar, #sidebar .list-group {
+        min-width: 1px;
+        overflow: visible;
+    }
+    /* overlay sub levels on small screens */
+    #sidebar .list-group .collapse.show, #sidebar .list-group .collapsing {
+        position: relative;
+        z-index: 1;
+        width: 190px;
+        top: 0;
+        }
+    
+    #sidebar .list-group > .list-group-item {
+        text-align: center;
+        padding: .75rem .5rem;
+    }
+    /* hide caret icons of top level when collapsed */
+    #sidebar .list-group > .list-group-item[aria-expanded="true"]::after,
+    #sidebar .list-group > .list-group-item[aria-expanded="false"]::after {
+        display:none;
+    }
+}
+
+.collapse.show {
+  visibility: visible;
+}
+.collapsing {
+  visibility: visible;
+  height: 0;
+  -webkit-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.collapsing.width {
+  -webkit-transition-property: width, visibility;
+  transition-property: width, visibility;
+  width: 0;
+  height: 100%;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+
+.fa-ellipsis-v{
+
+
+  cursor: pointer;
+}
+
+.dropdown-menu {
+max-width: px;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes sonar {
+  0% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+body {
+  font-size: 0.9rem;
+}
+.page-wrapper .sidebar-wrapper,
+.sidebar-wrapper .sidebar-brand > a,
+.sidebar-wrapper .sidebar-dropdown > a:after,
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:before,
+.sidebar-wrapper ul li a i,
+.page-wrapper .page-content,
+.sidebar-wrapper .sidebar-search input.search-menu,
+.sidebar-wrapper .sidebar-search .input-group-text,
+.sidebar-wrapper .sidebar-menu ul li a,
+#show-sidebar,
+#close-sidebar {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/*----------------page-wrapper----------------*/
+
+.page-wrapper {
+  height: 100vh;
+}
+
+.page-wrapper .theme {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 4px;
+  margin: 2px;
+}
+
+.page-wrapper .theme.chiller-theme {
+  background: #1e2229;
+}
+
+/*----------------toggeled sidebar----------------*/
+
+.page-wrapper.toggled .sidebar-wrapper {
+  left: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-wrapper.toggled .page-content {
+    padding-left: 300px;
+  }
+}
+/*----------------show sidebar button----------------*/
+#show-sidebar {
+  position: fixed;
+  left: 0;
+  top: 65px;
+  border-radius: 0 4px 4px 0px;
+  width: 35px;
+  transition-delay: 0.3s;
+  
+}
+.page-wrapper.toggled #show-sidebar {
+  left: -40px;
+}
+/*----------------sidebar-wrapper----------------*/
+
+.sidebar-wrapper {
+  width: 260px;
+  height: 100%;
+  max-height: 100%;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  z-index: 999;
+}
+
+.sidebar-wrapper ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-wrapper a {
+  text-decoration: none;
+}
+
+/*----------------sidebar-content----------------*/
+
+.sidebar-content {
+  max-height: calc(100% - 30px);
+  height: calc(100% - 30px);
+  overflow-y: auto;
+  position: relative;
+}
+
+.sidebar-content.desktop {
+  overflow-y: hidden;
+}
+
+/*--------------------sidebar-brand----------------------*/
+
+.sidebar-wrapper .sidebar-brand {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-wrapper .sidebar-brand > a {
+  text-transform: uppercase;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.sidebar-wrapper .sidebar-brand #close-sidebar {
+  cursor: pointer;
+  font-size: 20px;
+}
+/*--------------------sidebar-header----------------------*/
+
+.sidebar-wrapper .sidebar-header {
+  padding: 20px;
+  overflow: hidden;
+}
+
+.sidebar-wrapper .sidebar-header .user-pic {
+  float: left;
+  width: 60px;
+  padding: 2px;
+  border-radius: 12px;
+  margin-right: 15px;
+  overflow: hidden;
+}
+
+.sidebar-wrapper .sidebar-header .user-pic img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.sidebar-wrapper .sidebar-header .user-info {
+  float: left;
+}
+
+.sidebar-wrapper .sidebar-header .user-info > span {
+  display: block;
+}
+
+.sidebar-wrapper .sidebar-header .user-info .user-role {
+  font-size: 12px;
+}
+
+.sidebar-wrapper .sidebar-header .user-info .user-status {
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.sidebar-wrapper .sidebar-header .user-info .user-status i {
+  font-size: 8px;
+  margin-right: 4px;
+  color: #5cb85c;
+}
+
+/*-----------------------sidebar-search------------------------*/
+
+.sidebar-wrapper .sidebar-search > div {
+  padding: 10px 20px;
+}
+
+/*----------------------sidebar-menu-------------------------*/
+
+.sidebar-wrapper .sidebar-menu {
+  padding-bottom: 10px;
+}
+
+.sidebar-wrapper .sidebar-menu .header-menu span {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 15px 20px 5px 20px;
+  display: inline-block;
+}
+
+.sidebar-wrapper .sidebar-menu ul li a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+  padding: 8px 30px 8px 20px;
+}
+
+.sidebar-wrapper .sidebar-menu ul li a i {
+  margin-right: 10px;
+  font-size: 12px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.sidebar-wrapper .sidebar-menu ul li a:hover > i::before {
+  display: inline-block;
+  animation: swing ease-in-out 0.5s 1 alternate;
+}
+
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown > a:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+  font-style: normal;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background: 0 0;
+  position: absolute;
+  right: 15px;
+  top: 14px;
+}
+
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu ul {
+  padding: 5px 0;
+}
+
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li {
+  padding-left: 25px;
+  font-size: 13px;
+}
+
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:before {
+  content: "\f111";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 10px;
+  font-size: 8px;
+}
+
+.sidebar-wrapper .sidebar-menu ul li a span.label,
+.sidebar-wrapper .sidebar-menu ul li a span.badge {
+  float: right;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a .badge,
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a .label {
+  float: right;
+  margin-top: 0px;
+}
+
+.sidebar-wrapper .sidebar-menu .sidebar-submenu {
+  display: none;
+}
+
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown.active > a:after {
+  transform: rotate(90deg);
+  right: 17px;
+}
+
+/*--------------------------side-footer------------------------------*/
+
+.sidebar-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+}
+
+.sidebar-footer > a {
+  flex-grow: 1;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+}
+
+.sidebar-footer > a .notification {
+  position: absolute;
+  top: 0;
+}
+
+.badge-sonar {
+  display: inline-block;
+  background: #980303;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  top: 0;
+}
+
+.badge-sonar:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid #980303;
+  opacity: 0;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  animation: sonar 1.5s infinite;
+}
+
+/*--------------------------page-content-----------------------------*/
+
+.page-wrapper .page-content {
+  display: inline-block;
+  width: 100%;
+  padding-left: 0px;
+  padding-top: 20px;
+}
+
+.page-wrapper .page-content > div {
+  padding: 20px 40px;
+}
+
+.page-wrapper .page-content {
+  overflow-x: hidden;
+}
+
+/*------scroll bar---------------------*/
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #525965;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #525965;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #525965;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+/*-----------------------------chiller-theme-------------------------------------------------*/
+
+.chiller-theme .sidebar-wrapper {
+    background: #31353D;
+}
+
+.chiller-theme .sidebar-wrapper .sidebar-header,
+.chiller-theme .sidebar-wrapper .sidebar-search,
+.chiller-theme .sidebar-wrapper .sidebar-menu {
+    border-top: 1px solid #3a3f48;
+}
+
+.chiller-theme .sidebar-wrapper .sidebar-search input.search-menu,
+.chiller-theme .sidebar-wrapper .sidebar-search .input-group-text {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.chiller-theme .sidebar-wrapper .sidebar-header .user-info .user-role,
+.chiller-theme .sidebar-wrapper .sidebar-header .user-info .user-status,
+.chiller-theme .sidebar-wrapper .sidebar-search input.search-menu,
+.chiller-theme .sidebar-wrapper .sidebar-search .input-group-text,
+.chiller-theme .sidebar-wrapper .sidebar-brand>a,
+.chiller-theme .sidebar-wrapper .sidebar-menu ul li a,
+.chiller-theme .sidebar-footer>a {
+    color: #818896;
+}
+
+.chiller-theme .sidebar-wrapper .sidebar-menu ul li:hover>a,
+.chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active>a,
+.chiller-theme .sidebar-wrapper .sidebar-header .user-info,
+.chiller-theme .sidebar-wrapper .sidebar-brand>a:hover,
+.chiller-theme .sidebar-footer>a:hover i {
+    color: #b8bfce;
+}
+
+.page-wrapper.chiller-theme.toggled #close-sidebar {
+    color: #bdbdbd;
+}
+
+.page-wrapper.chiller-theme.toggled #close-sidebar:hover {
+    color: #ffffff;
+}
+
+.chiller-theme .sidebar-wrapper ul li:hover a i,
+.chiller-theme .sidebar-wrapper .sidebar-dropdown .sidebar-submenu li a:hover:before,
+.chiller-theme .sidebar-wrapper .sidebar-search input.search-menu:focus+span,
+.chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown.active a i {
+    color: #16c7ff;
+    text-shadow:0px 0px 10px rgba(22, 199, 255, 0.5);
+}
+
+.chiller-theme .sidebar-wrapper .sidebar-menu ul li a i,
+.chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown div,
+.chiller-theme .sidebar-wrapper .sidebar-search input.search-menu,
+.chiller-theme .sidebar-wrapper .sidebar-search .input-group-text {
+    background: #3a3f48;
+}
+
+.chiller-theme .sidebar-wrapper .sidebar-menu .header-menu span {
+    color: #6c7b88;
+}
+
+.chiller-theme .sidebar-footer {
+    background: #3a3f48;
+    box-shadow: 0px -1px 5px #282c33;
+    border-top: 1px solid #464a52;
+}
+
+.chiller-theme .sidebar-footer>a:first-child {
+    border-left: none;
+}
+
+.chiller-theme .sidebar-footer>a:last-child {
+    border-right: none;
+}
+
+
+
+
+</style>
+   <div id="preloader">
+        <div id="loader"></div>
+    </div>
+    <div id="splash" class="animated-splash">
+        <div class="curtain">
+            <div class="splash-content">
+                <i class="fa fa-spin fa-spinner"></i>
+                <h1 class="animated-title">Retrieving dashboard</h1>
+                <h3 class="animated-subtitle">Organize and manage your business stacks and workflows</h3>
+                <div class="animated-emoji" id="loadingEmoji">
+                    &#x1F60D;
+                </div>
+            </div>
+     </div></div>
+   
+
+
+
+ 
+  
+               
+
+
+
+<div class="page-wrapper chiller-theme">
+  <a id="show-sidebar" class="btn btn-sm btn-dark" href="#show-sidebar">
+    <i class="fa fa-chevron-right"></i>
+  </a>
+  
+  
+  
+  <nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-content">
+      <div class="sidebar-brand">
+       <i class="fa fa-th"></i> 
+        <a href="#" style= "color: white; text-transform: lowercase;">stack board</a>
+        
+        <div id="close-sidebar">
+          <i class="fa fa-times"></i>
+        </div>
+      </div>
+      <div class="sidebar-header">
+        <div class="user-pic">
+          <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+            alt="User picture">
+        </div>
+        <div class="user-info">
+          <span class="user-name">Jhon
+            <strong>Smith</strong>
+          </span>
+          <span class="user-role">Administrator</span>
+          <span class="user-status">
+            <i class="fa fa-circle"></i>
+            <span>Online</span>
+          </span>
+        </div>
+      </div>
+      
+      <div class="sidebar-menu">
+        <ul>
+          <li class="header-menu">
+            <span>General</span>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="fa fa-tachometer"></i>
+              <span>Dashboard</span>
+              <span class="badge badge-pill badge-warning">New</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="#">Dashboard 1
+                    <span class="badge badge-pill badge-success">Pro</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Dashboard 2</a>
+                </li>
+                <li>
+                  <a href="#">Dashboard 3</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="fa fa-shopping-cart"></i>
+              <span>E-commerce</span>
+              <span class="badge badge-pill badge-danger">3</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="#">Products
+
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Orders</a>
+                </li>
+                <li>
+                  <a href="#">Credit cart</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="far fa-gem"></i>
+              <span>Components</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="#">General</a>
+                </li>
+                <li>
+                  <a href="#">Panels</a>
+                </li>
+                <li>
+                  <a href="#">Tables</a>
+                </li>
+                <li>
+                  <a href="#">Icons</a>
+                </li>
+                <li>
+                  <a href="#">Forms</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="fa fa-chart-line"></i>
+              <span>Charts</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="#">Pie chart</a>
+                </li>
+                <li>
+                  <a href="#">Line chart</a>
+                </li>
+                <li>
+                  <a href="#">Bar chart</a>
+                </li>
+                <li>
+                  <a href="#">Histogram</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sidebar-dropdown">
+            <a href="#">
+              <i class="fa fa-globe"></i>
+              <span>Maps</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="#">Google maps</a>
+                </li>
+                <li>
+                  <a href="#">Open street map</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header-menu">
+            <span>Extra</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-book"></i>
+              <span>Documentation</span>
+              <span class="badge badge-pill badge-primary">Beta</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-calendar"></i>
+              <span>Calendar</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-folder"></i>
+              <span>Examples</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- sidebar-menu  -->
+    </div>
+    <!-- sidebar-content  -->
+    <div class="sidebar-footer">
+      <a href="#">
+        <i class="fa fa-bell"></i>
+        <span class="badge badge-pill badge-warning notification">3</span>
+      </a>
+      <a href="#">
+        <i class="fa fa-envelope"></i>
+        <span class="badge badge-pill badge-success notification">7</span>
+      </a>
+      <a href="#">
+        <i class="fa fa-cog"></i>
+        <span class="badge-sonar"></span>
+      </a>
+      <a href="#">
+        <i class="fa fa-power-off"></i>
+      </a>
+    </div>
+    
+  </nav>
+                
+         
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+      
+        
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">
+  
+  <h3><i class="fa fa-th"></i> stack board</h3></a>
+  
+   
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+      
+      
+       <a class="nav-link" href="#" data-toggle="dropdown"><i class="fa fa-bell"></i><span class="badge badge-danger"> 3</span></a>
+
+     
+    <div class="dropdown">
+    <div class="dropdown-menu" style="right:0; left: auto; font-size:12px;">
+    
+    
+    <a class="dropdown-item" style="color:; font-size:20px;" data-toggle="modal" href="#createaccount"><i class="fa fa-bell"></i> Alert center</a>
+      
+      <hr>
+    
+    
+    
+    
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">
+     
+      <img class="lib-img-show" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="HTML tutorial" style="width:25px;height:25px; margin-right: 10px;"> <strong>Welcome to stack board!</strong>
+      <br>
+      Thank you for trying stack board! <br>Take and tour and find out...</a>
+     
+     
+     <hr>
+    
+    
+    
+    
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">
+     
+      <img class="lib-img-show" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="HTML tutorial" style="width:25px;height:25px; margin-right: 10px;"> <strong>Welcome to stack board!</strong>
+      <br>
+      Thank you for trying stack board!<br> Take and tour and find out...</a>
+     
+     
+     
+     
+     <hr>
+    
+    
+    
+    
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">
+     
+      <img class="lib-img-show" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="HTML tutorial" style="width:25px;height:25px; margin-right: 10px;"> <strong>Welcome to stack board!</strong>
+      <br>
+      Thank you for trying stack board!<br> Take and tour and find out...</a>
+      
+      
+       <hr>
+      <center><a class="dropdown-item" style="color:blue;" data-toggle="modal" href="#createaccount">View all alerts</a></center>
+    </div>
+</div>
+      
+      </li>
+      
+     
+        
+        
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">Log in</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sign up</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+<div class="jumbotron">
+
+
+
+<div class="alert alert-danger alert-dismissible fade show d-sm-none">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>ATTENTION!</strong> Although stack board works on mobile, it is best used on larger screens for production. To try stack board now, simply close and ignore this message.
+    <br>
+    <br>
+    
+    For the best version we can send you a link to access from a larger screen
+    <br>
+    
+    <br>
+    <!-- Development -->
+  <center><a class="btn btn-success btn-sm" href="#development"><i class="fa fa-chain"></i>
+    Send link
+  </a> </center>
+  </div>
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Jump to boards
+<div class="button sticky-top" style="z-index: 1;">
+ <!-- Development -->
+  <a class="btn btn-dark btn-lg" href="#development"><i class="fa fa-code"></i>
+    Development
+  </a> 
+  
+
+  
+  <!-- marketing and design -->
+  <a href="#" type="button" class="btn btn-primary btn-lg "  data-target="#marketing"><i class="fa fa-bullhorn"></i>
+    Marketing & design
+  </a> 
+  
+  <!-- Video editing -->
+  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#notepad"><i class="fa fa-play"></i>
+    video editing
+  </button>
+  
+  
+  
+   <!-- spinner open button -->
+  <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#checklist"><i class="fa fa-line-chart"></i>
+   Analytics
+  </button>
+ 
+  
+  
+    <!-- seo -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#checklist"><i class="fa fa-chain"></i>
+   SEO
+  </button>
+  
+  
+  <!-- note pad open button -->
+  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#notepad"><i class="fa fa-share-alt"></i>
+    Networking
+  </button>
+  
+  
+   <!-- More -->
+  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#morestacks"><i class="fa fa-plus"></i>
+   More
+  </button> 
+  
+ <!--  tools open button -->
+  <button type="button" style="position:fixed;bottom:5px;right:5px;margin:0;padding:5px 3px;" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#tools"><i class="fa fa-wrench"></i>
+   Tools
+  </button>
+</div>
+<br>
+<hr>
+<h3>Profile stack</h3>
+<br>
+
+
+
+        
+      <div class="row w-100">
+      <!-- google my business card-->
+        <div class="col-md-3">
+            <div class="card border-success mx-sm-1 p-3">
+            
+            <div class="dropdown">
+            
+            <i class="fa fa-ellipsis-v" aria-hidden="true" data-toggle="dropdown" style="float: right;"></i>
+    
+    <div class="dropdown-menu">
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">Add account info</a>
+      <a class="dropdown-item" data-toggle="modal" href="#needaccount">Edit category</a>
+      <a class="dropdown-item" style="color:red;" data-toggle="modal" href="#needaccount">Remove from stack</a>
+    </div>
+</div>
+            
+                <div class="card border-success shadow text-success p-3 my-card"><img class="lib-img-show" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="HTML tutorial" style="width:25px;height:25px;"></div>
+                <br>
+               
+                   <div class="text-success text-center mt-2"><h4>Google my business</h4></div>
+                <div class="text-success text-center mt-2"><p>Use google my business to control you online google presence</p>   
+          
+              
+              
+              
+              <button onclick="gmb()" class="btn btn-primary" role="button" data-toggle="modal" data-target="#screencover">Open</button>
+         
+          
+           
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- end google my business card-->
+        
+       
+        
+    <!-- start angi card -->
+     <div class="col-md-3">
+            <div class="card border-success mx-sm-1 p-3">
+            
+            <div class="dropdown">
+            
+            <i class="fa fa-ellipsis-v" aria-hidden="true" data-toggle="dropdown" style="float: right;"></i>
+    
+    <div class="dropdown-menu">
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">Add account info</a>
+      <a class="dropdown-item" data-toggle="modal" href="#needaccount">Edit category</a>
+      <a class="dropdown-item" style="color:red;" data-toggle="modal" href="#needaccount">Remove from stack</a>
+    </div>
+</div>
+            
+                <div class="card border-success shadow text-success p-3 my-card"><img class="lib-img-show" src="https://logosandtypes.com/wp-content/uploads/2021/04/Angi.png" alt="HTML tutorial" style="width:25px;height:25px;"></div>
+                <br>
+               
+                   <div class="text-success text-center mt-2"><h4>Angi</h4></div>
+                <div class="text-success text-center mt-2"><p>Use Angi my business to control you online google presence</p>   
+          
+              
+              
+              
+              <button onclick="angi()" class="btn btn-primary" role="button" data-toggle="modal" data-target="#screencover">Open</button>
+         
+          
+           
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    
+    <!--END angi card-->
+        
+        
+    <!-- start houzz card-->
+    
+    
+     <div class="col-md-3">
+            <div class="card border-success mx-sm-1 p-3">
+            
+            <div class="dropdown">
+            
+            <i class="fa fa-ellipsis-v" aria-hidden="true" data-toggle="dropdown" style="float: right;"></i>
+    
+    <div class="dropdown-menu">
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">Add account info</a>
+      <a class="dropdown-item" data-toggle="modal" href="#needaccount">Edit category</a>
+      <a class="dropdown-item" style="color:red;" data-toggle="modal" href="#needaccount">Remove from stack</a>
+    </div>
+</div>
+            
+                <div class="card border-success shadow text-success p-3 my-card"><img class="lib-img-show" src="https://pentagram-production.imgix.net/bf71f972-52fd-4432-abed-96685edf8e9c/ps_houzz_01.png?crop=edges&fit=crop&h=630&rect=31%2C0%2C12450%2C7793&w=1200" alt="HTML tutorial" style="width:25px;height:25px;"></div>
+                <br>
+               
+                   <div class="text-success text-center mt-2"><h4>houzz</h4></div>
+                <div class="text-success text-center mt-2"><p>Use houzz my business to control you online google presence</p>   
+          
+              
+              
+              
+              <button onclick="houzz()" class="btn btn-primary" role="button" data-toggle="modal" data-target="#screencover">Open</button>
+         
+          
+           
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    
+    
+    
+    <!-- End house card -->
+        
+        
+        
+        
+        
+          
+     
+       
+          
+            
+    
+          
+          
+          
+                        <div class="col-md-3">
+            <div class="card border-danger mx-sm-1 p-3">
+                <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-play" aria-hidden="true"></span></div>
+                <div class="text-danger text-center mt-3"><h4>Video</h4></div>
+                <div class="text-danger text-center mt-2"><p>Upload videos</p>
+                <br>
+            <br>
+          <!-- note pad open button -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#video">
+    Open
+  </button>
+                </div>
+            </div>
+        </div>
+        </div>
+       <p style="color:transparent;">d</p>
+
+    <div class="row2">
+    
+       <div class="row w-100">
+        <div class="col-md-3">
+        
+            <div class="card border-warning mx-sm-1 p-3">
+                <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-briefcase" aria-hidden="true"></span></div>
+                <div class="text-warning text-center mt-3"><h4>Business sites</h4></div>
+                <div class="text-warning text-center mt-2"><p>Build a business presence</p>
+                <br>
+                <br>
+              
+              <!-- note pad open button -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#business">
+    Open
+  </button>
+               </div> 
+                </div>
+                </div>
+          
+            
+            
+            
+            
+         <div class="col-md-3">
+         
+            <div class="card border-danger mx-sm-1 p-3">
+                <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-play" aria-hidden="true"></span></div>
+               
+                <div class="text-danger text-center mt-3"><h4>Video</h4></div>
+                <div class="text-danger text-center mt-2"><p>Upload videos</p>
+                <br>
+                <br>
+            
+           
+           
+          <!-- note pad open button -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#video">
+    Open
+  </button>
+                </div>
+            </div>
+        </div>    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+       
+            
+            
+            
+            
+            <div class="col-md-3">
+           
+       
+            <div class="card border-warning mx-sm-1 p-3 bg-warning">
+                <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-plus" aria-hidden="true"></span></div>
+                <div class="text-white text-center mt-3"><h4>Add</h4></div>
+                <div class="text-white text-center mt-2"><p>Add to this stack or add another stack category to your board</p>
+                
+              
+              <!-- note pad open button -->
+  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#business">
+    Add
+  </button>
+               </div> 
+                
+                </div>
+            </div>   
+        
+
+     
+        
+            
+            
+            
+            
+            
+            
+        
+        
+      
+       
+       
+       
+       
+        </div>
+     
+     <br>
+ 
+     <hr>
+   <!------ start tools --->
+     <div id="development">
+     
+     <h3>Tools</h3>
+   <br>
+     
+    
+      <div class="row w-100">
+      <!-- google my business card-->
+        <div class="col-md-3">
+            <div class="card border-success mx-sm-1 p-3">
+            
+            <div class="dropdown">
+            
+            <i class="fa fa-ellipsis-h" aria-hidden="true" data-toggle="dropdown" style="float: right;"></i>
+    
+    <div class="dropdown-menu">
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">Add account info</a>
+      <a class="dropdown-item" data-toggle="modal" href="#createaccount">Edit category</a>
+      <a class="dropdown-item" style="color:red;" data-toggle="modal" href="#createaccount">Remove from stack</a>
+    </div>
+</div>
+            
+                <div class="card border-success shadow text-success p-3 my-card"><img class="lib-img-show" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="HTML tutorial" style="width:25px;height:25px;"></div>
+                <br>
+               
+                   <div class="text-success text-center mt-2"><h4>Google my business</h4></div>
+                <div class="text-success text-center mt-2"><p>Use google my business to control you online google presence</p>   
+          
+              
+              
+              
+              <button onclick="gmb()" class="btn btn-primary" role="button" data-toggle="modal" data-target="#screencover">Open</button>
+         
+          
+           
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- end google my business card-->
+        
+       
+        
+    <!-- start angi card -->
+     <div class="col-md-3">
+            <div class="card border-success mx-sm-1 p-3">
+            
+            <div class="dropdown">
+            
+            <i class="fa fa-ellipsis-h" aria-hidden="true" data-toggle="dropdown" style="float: right;"></i>
+    
+    <div class="dropdown-menu">
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">Add account info</a>
+      <a class="dropdown-item" data-toggle="modal" href="#createaccount">Edit category</a>
+      <a class="dropdown-item" style="color:red;" data-toggle="modal" href="#createaccount">Remove from stack</a>
+    </div>
+</div>
+            
+                <div class="card border-success shadow text-success p-3 my-card"><img class="lib-img-show" src="https://logosandtypes.com/wp-content/uploads/2021/04/Angi.png" alt="HTML tutorial" style="width:25px;height:25px;"></div>
+                <br>
+               
+                   <div class="text-success text-center mt-2"><h4>Angi</h4></div>
+                <div class="text-success text-center mt-2"><p>Use Angi my business to control you online google presence</p>   
+          
+              
+              
+              
+              <button onclick="angi()" class="btn btn-primary" role="button" data-toggle="modal" data-target="#screencover">Open</button>
+         
+          
+           
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    
+    <!--END angi card-->
+        
+        
+    <!-- start houzz card-->
+    
+    
+     <div class="col-md-3">
+            <div class="card border-success mx-sm-1 p-3">
+            
+            <div class="dropdown">
+            
+            <i class="fa fa-ellipsis-h" aria-hidden="true" data-toggle="dropdown" style="float: right;"></i>
+    
+    <div class="dropdown-menu">
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">Add account info</a>
+      <a class="dropdown-item" data-toggle="modal" href="#createaccount">Edit category</a>
+      <a class="dropdown-item" style="color:red;" data-toggle="modal" href="#createaccount">Remove from stack</a>
+    </div>
+</div>
+            
+                <div class="card border-success shadow text-success p-3 my-card"><img class="lib-img-show" src="https://pentagram-production.imgix.net/bf71f972-52fd-4432-abed-96685edf8e9c/ps_houzz_01.png?crop=edges&fit=crop&h=630&rect=31%2C0%2C12450%2C7793&w=1200" alt="HTML tutorial" style="width:25px;height:25px;"></div>
+                <br>
+               
+                   <div class="text-success text-center mt-2"><h4>houzz</h4></div>
+                <div class="text-success text-center mt-2"><p>Use houzz my business to control you online google presence</p>   
+          
+              
+              
+              
+              <button onclick="houzz()" class="btn btn-primary" role="button" data-toggle="modal" data-target="#screencover">Open</button>
+         
+          
+           
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    
+    
+    
+    <!-- End house card -->
+        
+        
+        
+        
+        
+          
+     
+       
+          
+            
+    
+          
+          
+          
+                        <div class="col-md-3">
+            <div class="card border-danger mx-sm-1 p-3">
+                <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-play" aria-hidden="true"></span></div>
+                <div class="text-danger text-center mt-3"><h4>Video</h4></div>
+                <div class="text-danger text-center mt-2"><p>Upload videos</p>
+                <br>
+            <br>
+          <!-- note pad open button -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#video">
+    Open
+  </button>
+                </div>
+            </div>
+        </div>
+        </div>
+       <p style="color:transparent;">d</p>
+
+    <div class="row2">
+    
+       <div class="row w-100">
+        <div class="col-md-3">
+        
+            <div class="card border-warning mx-sm-1 p-3">
+                <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-briefcase" aria-hidden="true"></span></div>
+                <div class="text-warning text-center mt-3"><h4>Business sites</h4></div>
+                <div class="text-warning text-center mt-2"><p>Build a business presence</p>
+                <br>
+                <br>
+              
+              <!-- note pad open button -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#business">
+    Open
+  </button>
+               </div> 
+                </div>
+                </div>
+          
+            
+            
+            
+            
+         <div class="col-md-3">
+         
+            <div class="card border-danger mx-sm-1 p-3">
+                <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-play" aria-hidden="true"></span></div>
+               
+                <div class="text-danger text-center mt-3"><h4>Video</h4></div>
+                <div class="text-danger text-center mt-2"><p>Upload videos</p>
+                <br>
+                <br>
+            
+           
+           
+          <!-- note pad open button -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#video">
+    Open
+  </button>
+                </div>
+            </div>
+        </div>    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+       
+            
+            
+            
+            
+            <div class="col-md-3">
+           
+       
+            <div class="card border-warning mx-sm-1 p-3 bg-warning">
+                <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-plus" aria-hidden="true"></span></div>
+                <div class="text-white text-center mt-3"><h4>Add</h4></div>
+                <div class="text-white text-center mt-2"><p>Add to this stack or add another stack category to your board</p>
+                
+              
+              <!-- note pad open button -->
+  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#business">
+    Add
+  </button>
+               </div> 
+                
+                </div>
+            </div> 
+            </div>
+           
+     
+   <br>
+   <hr>
+   <div id="more">
+   <h3>more</h3>
+   
+         <div class="row w-100">
+      <!-- google my business card-->
+        <div class="col-md-3">
+            <div class="card border-success mx-sm-1 p-3">
+            
+            <div class="dropdown">
+            
+            <i class="fa fa-ellipsis-h" aria-hidden="true" data-toggle="dropdown" style="float: right;"></i>
+    
+    <div class="dropdown-menu">
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">Add account info</a>
+      <a class="dropdown-item" data-toggle="modal" href="#createaccount">Edit category</a>
+      <a class="dropdown-item" style="color:red;" data-toggle="modal" href="#createaccount">Remove from stack</a>
+    </div>
+</div>
+            
+                <div class="card border-success shadow text-success p-3 my-card"><img class="lib-img-show" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png" alt="HTML tutorial" style="width:25px;height:25px;"></div>
+                <br>
+               
+                   <div class="text-success text-center mt-2"><h4>Google my business</h4></div>
+                <div class="text-success text-center mt-2"><p>Use google my business to control you online google presence</p>   
+          
+              
+              
+              
+              <button onclick="gmb()" class="btn btn-primary" role="button" data-toggle="modal" data-target="#screencover">Open</button>
+         
+          
+           
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- end google my business card-->
+        
+       
+        
+    <!-- start angi card -->
+     <div class="col-md-3">
+            <div class="card border-success mx-sm-1 p-3">
+            
+            <div class="dropdown">
+            
+            <i class="fa fa-ellipsis-h" aria-hidden="true" data-toggle="dropdown" style="float: right;"></i>
+    
+    <div class="dropdown-menu">
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">Add account info</a>
+      <a class="dropdown-item" data-toggle="modal" href="#createaccount">Edit category</a>
+      <a class="dropdown-item" style="color:red;" data-toggle="modal" href="#createaccount">Remove from stack</a>
+    </div>
+</div>
+            
+                <div class="card border-success shadow text-success p-3 my-card"><img class="lib-img-show" src="https://logosandtypes.com/wp-content/uploads/2021/04/Angi.png" alt="HTML tutorial" style="width:25px;height:25px;"></div>
+                <br>
+               
+                   <div class="text-success text-center mt-2"><h4>Angi</h4></div>
+                <div class="text-success text-center mt-2"><p>Use Angi my business to control you online google presence</p>   
+          
+              
+              
+              
+              <button onclick="angi()" class="btn btn-primary" role="button" data-toggle="modal" data-target="#screencover">Open</button>
+         
+          
+           
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    
+    <!--END angi card-->
+        
+        
+    <!-- start houzz card-->
+    
+    
+     <div class="col-md-3">
+            <div class="card border-success mx-sm-1 p-3">
+            
+            <div class="dropdown">
+            
+            <i class="fa fa-ellipsis-h" aria-hidden="true" data-toggle="dropdown" style="float: right;"></i>
+    
+    <div class="dropdown-menu">
+      <a class="dropdown-item" data-toggle="modal" href="#accountinfo">Add account info</a>
+      <a class="dropdown-item" data-toggle="modal" href="#createaccount">Edit category</a>
+      <a class="dropdown-item" style="color:red;" data-toggle="modal" href="#createaccount">Remove from stack</a>
+    </div>
+</div>
+            
+                <div class="card border-success shadow text-success p-3 my-card"><img class="lib-img-show" src="https://pentagram-production.imgix.net/bf71f972-52fd-4432-abed-96685edf8e9c/ps_houzz_01.png?crop=edges&fit=crop&h=630&rect=31%2C0%2C12450%2C7793&w=1200" alt="HTML tutorial" style="width:25px;height:25px;"></div>
+                <br>
+               
+                   <div class="text-success text-center mt-2"><h4>houzz</h4></div>
+                <div class="text-success text-center mt-2"><p>Use houzz my business to control you online google presence</p>   
+          
+              
+              
+              
+              <button onclick="houzz()" class="btn btn-primary" role="button" data-toggle="modal" data-target="#screencover">Open</button>
+         
+          
+           
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    
+    
+    
+    <!-- End house card -->
+        
+        
+        
+        
+        
+          
+     
+       
+          
+            
+    
+          
+          
+          
+                        <div class="col-md-3">
+            <div class="card border-danger mx-sm-1 p-3">
+                <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-play" aria-hidden="true"></span></div>
+                <div class="text-danger text-center mt-3"><h4>Video</h4></div>
+                <div class="text-danger text-center mt-2"><p>Upload videos</p>
+                <br>
+            <br>
+          <!-- note pad open button -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#video">
+    Open
+  </button>
+                </div>
+            </div>
+        </div>
+        </div>
+       <p style="color:transparent;">d</p>
+
+    <div class="row2">
+    
+       <div class="row w-100">
+        <div class="col-md-3">
+        
+            <div class="card border-warning mx-sm-1 p-3">
+                <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-briefcase" aria-hidden="true"></span></div>
+                <div class="text-warning text-center mt-3"><h4>Business sites</h4></div>
+                <div class="text-warning text-center mt-2"><p>Build a business presence</p>
+                <br>
+                <br>
+              
+              <!-- note pad open button -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#business">
+    Open
+  </button>
+               </div> 
+                </div>
+                </div>
+          
+            
+            
+            
+            
+         <div class="col-md-3">
+         
+            <div class="card border-danger mx-sm-1 p-3">
+                <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-play" aria-hidden="true"></span></div>
+               
+                <div class="text-danger text-center mt-3"><h4>Video</h4></div>
+                <div class="text-danger text-center mt-2"><p>Upload videos</p>
+                <br>
+                <br>
+            
+           
+           
+          <!-- note pad open button -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#video">
+    Open
+  </button>
+                </div>
+            </div>
+        </div>    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+       
+            
+            
+            
+            
+            <div class="col-md-3">
+           
+       
+            <div class="card border-warning mx-sm-1 p-3 bg-warning">
+                <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-plus" aria-hidden="true"></span></div>
+                <div class="text-white text-center mt-3"><h4>Add</h4></div>
+                <div class="text-white text-center mt-2"><p>Add to this stack or add another stack category to your board</p>
+                
+              
+              <!-- note pad open button -->
+  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#business">
+    Add
+  </button>
+               </div> 
+                
+                </div>
+            </div>
+   
+   </div>
+   </div>
+   </div>
+  
+   
+   
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+ <!-- local listing sites modal -->
+  <div class="modal" id="locallistings">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Local listing sites</h4>
+      
+          
+        </div>
+        
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+   
+
+   
+   
+   <div class="row row-margin-bottom">
+   
+            <div class="col-auto no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-auto">
+                            <img class="lib-img-show" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShfk5hSTQjlimrTT-QYUjmujtmF8bZdhZFxJM0jU_lsSWP-gq6buif4yCsrnpIDyVE4Rc&usqp=CAU" alt="HTML tutorial" style="width:100px;height:100px;">
+                        </div>
+                        <div class="col-auto">
+                            <div class="lib-row lib-header h5">
+                                Tumblr
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                tumblr is a micro blogging platform<br><br>
+                                
+                         <button onclick="tumblr()">Try it</button>
+
+<script>
+function tumblr() {
+  window.open("https://www.w3schools.com", "_blank", "toolbar=no,scrollbars=yes,resizable=yes,top=50,left=150,width=1000,height=600");
+}
+</script>       
+                                
+                                
+                                
+                                
+                                <button onclick="tumblr()" class="btn btn-info" role="button">Open</button>
+                                <a href="#">Take a tour</a>
+                                
+                            </div>
+           
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+   </div>
+ <hr style="height:2px;border-width:0;color:grey;background-color:grey">
+ 
+ 
+ 
+ 
+ 
+   <div class="row row-margin-bottom">
+   
+            <div class="col-auto no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-auto">
+                            <img class="lib-img-show" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/1024px-WordPress_blue_logo.svg.png" alt="HTML tutorial" style="width:100px;height:100px;">
+                        </div>
+                        <div class="col-auto">
+                            <div class="lib-row lib-header h5">
+                                Wordpress
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                Wordpress is a blogging platform<br><br>
+                                <a href="#" class="btn btn-info" role="button">Open</a>
+                                <a href="#">Take a tour</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+   </div>
+ <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+ <center>More sites coming soon</center>
+ 
+ 
+       
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+     
+  <!-- END local listing sites modal -->   
+  
+  
+  
+  
+       
+ <!-- More stacks modal -->
+  <div class="modal" id="morestacks">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">More stack catagories</h4>
+      
+          
+        </div>
+        
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+   
+
+   
+   
+  
+    <a href="#" type="button" class="btn btn-primary btn-lg "  data-target="#marketing"><i class="fa fa-bullhorn"></i>
+    Marketing & design
+  </a> 
+ <hr style="height:2px;border-width:0;color:grey;background-color:grey">
+ 
+ 
+ 
+ 
+ 
+ <a href="#" type="button" class="btn btn-primary btn-lg "  data-target="#marketing"><i class="fa fa-bullhorn"></i>
+    Marketing & design
+  </a> 
+ <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+ <center><a href="#">Add or create more</a></center>
+ 
+ 
+       
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+     
+  <!-- END more stacks modal --> 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- screen cover on open modal-->
+  <div class="modal fade" id="screencover" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      
+        
+          <center><button type="button" class="btn btn-secondary btn-lg" onclick="closeWin()" data-dismiss="modal">Close window</button>
+           <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Minimize</button></center>
+           
+           
+           
+           <center><h3 style="color: white; padding-top:200px;">To make sure the window is closed fully, use the close button above</h3></center>
+           </div>
+          
+        </div>
+        
+        <!-- End screen cover modal -->
+  
+  
+  
+  
+  
+  
+  
+<!-- The Modal accountinfo -->
+  <div class="modal" id="accountinfo">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Account info</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        
+  <iframe src="https://dymond.systems/accountinfo"  width="100%;" height="450px;" frameBorder="0;">
+        </iframe>
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+        
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <br>
+          
+          
+        </div>
+        
+        <p>If you need more help try <a href="#">ChatGPT</a></p>
+      </div>
+    </div>
+  </div>
+  <!---end account info modal-->
+  
+  
+  
+  
+  
+  <!-- The Modal more -->
+  <div class="modal" id="tools">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">More tools</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        <div class="container">
+  
+  <!-- note pad open button -->
+  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#notes"><i class="fa fa-sticky-note-o"></i>
+    Note pad
+  </button>
+  <br>
+  <hr>
+  <br>
+  
+  <!-- note pad open button -->
+  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#chat"><i class="fa fa-sticky-note-o"></i>
+    Chat
+  </button>
+  
+
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+  
+  
+ <!-- End tools modal-->
+ 
+ 
+ 
+ 
+ 
+ <!--start notes modal-->
+   
+  <div class="modal" id="notes">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Note pad</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        	<div class="container">
+            
+       
+            
+            
+            
+            
+            
+            
+            <form>
+    <div class="form-group">
+      <label for="comment">Keep notes here</label>
+      
+      <textarea style="width:100%" rows="1" cols="50" name="t3" id="output1" placeholder="Click (create) and copy code when done">
+</textarea>
+      
+      
+      
+      <button type="button" class='btn btn-warning pushme2 with-color' onclick="myFunction()">Copy</button>
+    </div>
+  </form>
+  
+            
+            
+            
+  
+  <form>
+    <div class="form-group">
+      <label for="comment">Keep notes here</label>
+      
+      <textarea style="width:100%" rows="15" cols="50" name="t3" id="output1" placeholder="Click (create) and copy code when done">
+</textarea>
+      
+      
+      
+      <button type="button" class='btn btn-primary pushme2 with-color2' onclick="myFunction()">Copy</button>
+      
+      <input type="button" class='btn btn-danger' name="reset_form" value="Reset / clear" onclick="this.form.reset();" style="background-color:red; color:white;">
+    </div>
+  </form>
+</div>
+
+        
+        
+        
+        
+        
+  <form>
+    <div class="form-group">
+      <label for="comment">Add URL</label>
+      
+      <textarea style="width:100%" rows="1" cols="50" name="t3" id="output1" placeholder="Click (create) and copy code when done">
+</textarea>
+      
+      
+      
+      <button type="button" class='btn btn-warning pushme2 with-color' onclick="myFunction()">Copy</button>
+    </div>
+  </form>
+  
+  
+  <button type="button" class="btn btn-success pushme3 with-color" data-toggle="collapse" data-target="#demo">Add another</button>
+  <div id="demo" class="collapse">
+  
+ <form>
+    <div class="form-group">
+      <label for="comment">Add URL</label>
+      
+      <textarea style="width:100%" rows="1" cols="50" name="t3" id="output1" placeholder="Click (create) and copy code when done">
+</textarea>
+      
+      
+      
+      <button type="button" class='btn btn-warning pushme2 with-color' onclick="myFunction()">Copy</button>
+    </div>
+  </form>
+  
+  
+  
+  
+  
+  
+  
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">Add another</button>
+  <div id="demo1" class="collapse">
+    <form>
+    <div class="form-group">
+      <label for="comment">Max URL's</label>
+      
+      <textarea style="width:100%" rows="1" cols="50" name="t3" id="output1" placeholder="Click (create) and copy code when done">
+</textarea>
+      
+      
+      
+      <button type="button" class='btn btn-warning pushme2 with-color' onclick="myFunction()">Copy</button>
+    </div>
+  </form>
+        
+        
+        
+        </div>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+ 
+ <!--End notes modal-->
+ 
+ 
+ <!--Start chat modal-->
+ 
+
+  <div class="modal" id="chat">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content" style= "background-color:#242424;">
+      
+        <!-- Modal Header -->
+        <div class="modal-header bg-dark">
+          <h4 class="modal-title">Help</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body ">
+        
+  <iframe src="https://dymond.systems/bot2"  width="100%;" height="750px;" frameBorder="0;">
+        </iframe>
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer bg-dark">
+        
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <br>
+          
+          
+        </div>
+        <div class="bg-dark">
+        <p>If you need more help try <a href="#">ChatGPT</a></p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!-- End chat modal-->
+  
+  
+  
+   <!--Start need account modal-->
+ 
+
+  <div class="modal" id="needaccount">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Hold up!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body ">
+        <div class="container">
+        
+  <iframe src="https://dymond.systems/need-account-lander"  width="100%;" height="500px;" frameBorder="0;">
+        </iframe>
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+        
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <br>
+          
+          
+        </div>
+       
+       
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!-- End need account modal-->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- Sign in warning -->
+  <div class="modal" id="accountinfo">
+    <div class="modal-dialog modal">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Account info</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        
+  <iframe src="https://dymond.systems/accountinfo"  width="100%;" height="400px;" frameBorder="0;">
+        </iframe>
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+        
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <br>
+          
+          
+        </div>
+        
+        <p>If you need more help try <a href="#">ChatGPT</a></p>
+      </div>
+    </div>
+  </div>
+  
+  <!--Sign in warning -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+<!-- footer start -->
+    <footer class="bg-dark text-light py-5 mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <h3 class="mb-0"><i class="fas fa-dollar-sign"></i>earn</h3>
+                            <small class="d-block text-muted">© 2018-2019</small>
+                            <small class="text-muted">All Rights Reserved.</small>
+                        </div>
+                        <!--end of col-->
+                        <div class="col-12 col-md-9">
+                            
+                            <div class="row no-gutters">
+                                <div class="col-6 col-lg-3">
+                                     <h5>Features</h5>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#" class="text-muted">Ready to ship</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Light weight</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted"> Responsive</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Inner Pages</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--end of col-->
+                                <div class="col-6 col-lg-3">
+                                    <h5>Resources</h5>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#" class="text-muted">Angular</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Java</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Camunda API</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Postman</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--end of col-->
+                             
+                                <div class="col-6 col-lg-3">
+                                     <h5>Help</h5>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#" class="text-muted">Forum</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Projects</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Site map</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--end of col-->
+                                <div class="col-6 col-lg-3">
+                                    <h5>About</h5>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#" class="text-muted">Team</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Privact</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Terms</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="text-muted">Investment</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--end of col-->
+                            </div>
+                            <!--end of row-->
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </footer>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<script>
+					window.onload = function () {
+						  var buttons = document.getElementsByTagName('span1'),
+							  result = document.querySelectorAll('.result p')[0],
+							  clear = document.getElementsByClassName('clear')[0];
+						  
+						  for (var i = 0; i < buttons.length; i++) {
+							if (buttons[i].innerHTML === '=') {
+							  buttons[i].addEventListener("click", calculate(i));
+							} else {
+							  buttons[i].addEventListener("click", addValue(i));
+							}
+						  }
+						  
+						  clear.onclick = function () {
+							result.innerHTML = '';
+						  };  
+						  
+						  function addValue(i) {
+							return function () {
+							    
+								result.innerHTML += buttons[i].innerHTML;
+									
+							};
+						  }
+						  
+						  function calculate(i) {
+
+							return function () {
+									var final_res = result.innerHTML;
+                                     
+																	  
+							  result.innerHTML = eval(final_res);
+							};
+						  }
+						};
+	
+</script>
+
+<script>
+  $("#notepad, #game1").on('show.bs.modal', function (e) {
+    $("#more").modal("hide");
+});
+  
+  </script>
+
+<script>
+function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("output1");
+  
+function myFunction2() {
+  document.getElementByName("t3").reset();
+}
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+  
+  
+}
+
+for (i = 0; i < frm_elements.length; i++)
+{
+    field_type = frm_elements[i].type.toLowerCase();
+    switch (field_type)
+    {
+    case "text":
+    case "password":
+    case "textarea":
+    case "hidden":
+        frm_elements[i].value = "";
+        break;
+    case "radio":
+    case "checkbox":
+        if (frm_elements[i].checked)
+        {
+            frm_elements[i].checked = false;
+        }
+        break;
+    case "select-one":
+    case "select-multi":
+        frm_elements[i].selectedIndex = -1;
+        break;
+    default:
+        break;
+    }
+}
+
+</script>
+
+
+
+<script>
+$(document).ready(function(){
+
+    $(".pushme").click(function () {
+       $(this).text("DON'T PUSH ME");
+    });
+    
+    $(".pushme-with-color").click(function () {
+       $(this).text("DON'T PUSH ME");
+       $(this).addClass("btn-success");
+       $(this).removeClass("btn-danger");
+    });
+    
+    $(".with-color").click(function () {    
+       if($(this).hasClass("btn-danger"))
+       {
+       		$(this).addClass("btn-success");
+       		$(this).removeClass("btn-danger");
+       }
+       else{
+       		$(this).addClass("btn-danger");
+       		$(this).removeClass("btn-success");
+       }
+    });
+
+    $(".pushme2").click(function(){
+		$(this).text(function(i, v){
+		   return v === 'Copied!' ? 'Copy' : 'Copied!'
+		});
+   
+       
+    });
+    
+});
+
+
+</script>
+<script>
+$(document).ready(function(){
+ $(".with-color2").click(function () {    
+       if($(this).hasClass("btn-success"))
+       {
+       		$(this).addClass("btn-primary");
+       		$(this).removeClass("btn-success");
+       }
+       else{
+       		$(this).addClass("btn-success");
+       		$(this).removeClass("btn-primary");
+       }
+    });
+
+
+    $(".pushme3").click(function(){
+		$(this).text(function(i, v){
+		   return v === 'REMOVE' ? 'ADD' : 'REMOVE'
+		});
+    });
+});
+</script>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded",
+ function () {
+    setTimeout(function () {
+        document.getElementById("preloader")
+        .style.display = "none";
+        setTimeout(function () 
+        {
+            document.getElementById("splash")
+            .style.display = "none";
+            document.getElementById("content")
+            .style.display = "block";
+            addLiveAnimations();
+        }, 6000);
+    }, 2000);
+});
+
+
+</script>
+
+
+
+<script>
+function gmb() {
+  window.open("https://www.google.com/search?q=gmbsrc=&stick=H4sIAAAAAAAA_-NgU1IxqLCwMDVOMUxKNUtNNU0zNEqyMqgwMzYwMzVJMzYxSzNINk9axMrnUpmbn5eiUFxZXJKaWwwA9X3h3zkAAAA&hl=en&mat=CfawGeevhG8XElYBqiIDwjh4go1kxbfCGX9NORgZGbOTD2O4JIah92gahpIvmGGB6xMRTf2t281KtxFR__vD2Thrl7R3Dp3zuoCKKZXkkraWCMNfoN6_fo05VGFzEuTYYA&authuser=0#mpd=editprofile/info", "_blank", "toolbar=no,scrollbars=yes,resizable=yes,top=160,left=200,width=1000,height=500");
+  
+}
+
+function angi() {
+  window.open("https://angi.com", "_blank", "toolbar=no,scrollbars=yes,resizable=yes,top=160,left=200,width=1000,height=500");
+  
+}
+
+function houzz() {
+  window.open("https://houzz.com", "_blank", "toolbar=no,scrollbars=yes,resizable=yes,top=160,left=200,width=1000,height=500");
+  
+}
+</script>
+
+<script type="text/javascript">
+
+if (screen.width <= 699) {
+document.location = "/form5/v6/redirect";
+}
+ 
+</script>  
+
+<script>
+jQuery(function ($) {
+
+    $(".sidebar-dropdown > a").click(function() {
+  $(".sidebar-submenu").slideUp(200);
+  if (
+    $(this)
+      .parent()
+      .hasClass("active")
+  ) {
+    $(".sidebar-dropdown").removeClass("active");
+    $(this)
+      .parent()
+      .removeClass("active");
+  } else {
+    $(".sidebar-dropdown").removeClass("active");
+    $(this)
+      .next(".sidebar-submenu")
+      .slideDown(200);
+    $(this)
+      .parent()
+      .addClass("active");
+  }
+});
+
+$("#close-sidebar").click(function() {
+  $(".page-wrapper").removeClass("toggled");
+});
+$("#show-sidebar").click(function() {
+  $(".page-wrapper").addClass("toggled");
+});
+
+
+   
+   
+});
+</script>
+
+
